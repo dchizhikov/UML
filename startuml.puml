@@ -5,14 +5,14 @@ hide @unlinked
 'hide $iPOST
 
 component "ЕТП" as system_1 <<subsystem>> {
-[EFP.ESZ_PROF] as system_1_1 <<subsystem>>
+[Система1] as system_1_1 <<subsystem>>
 'component [MS.ARTEMIS_MOVER] as system_1_2 '<<subsystem>> {
 '[EXT] as system_1_2_1 <<queue>>
 '}
 }
-[МЭШ.Шлюз API] as GW <<subsystem>>
-component [МЭШ.Контингент] as system_2 <<subsystem>> {
-[ContingentService] as system_2_1 <<service>>
+[Шлюз API] as GW <<subsystem>>
+component [Система-2] as system_2 <<subsystem>> {
+[Service] as system_2_1 <<service>>
 }
 
 'Интерфейсы
