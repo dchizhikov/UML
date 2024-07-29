@@ -1,0 +1,27 @@
+@startuml
+skinparam componentStyle uml2
+skinparam componentStyle rectangle
+hide @unlinked
+'hide $iPOST
+
+component "ЕТП" as system_1 <<subsystem>> {
+[EFP.ESZ_PROF] as system_1_1 <<subsystem>>
+'component [MS.ARTEMIS_MOVER] as system_1_2 '<<subsystem>> {
+'[EXT] as system_1_2_1 <<queue>>
+'}
+}
+[МЭШ.Шлюз API] as GW <<subsystem>>
+component [МЭШ.Контингент] as system_2 <<subsystem>> {
+[ContingentService] as system_2_1 <<service>>
+}
+
+'Интерфейсы
+() "/contingent/persons" as iF_1
+() "/contingent/persons" as iF_2
+
+system_1_1 -> iF_1 : "Запрос персоны"
+iF_1 - GW
+GW .> iF_2: <<Expose>>
+iF_2 - system_2_1
+
+@enduml
