@@ -1,0 +1,7 @@
+skinparam component {
+    backgroundColor<<subsystem>> aqua-white
+    backgroundColor blue/white
+}
+skinparam interface {
+    backgroundColor aqua/white
+}
