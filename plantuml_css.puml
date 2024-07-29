@@ -1,3 +1,4 @@
+@startuml
 skinparam component {
     backgroundColor<<subsystem>> aqua-white
     backgroundColor blue/white
@@ -5,3 +6,4 @@ skinparam component {
 skinparam interface {
     backgroundColor aqua/white
 }
+@enduml
