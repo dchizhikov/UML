@@ -1,4 +1,6 @@
 @startuml
+'https://raw.githubusercontent.com/dchizhikov/UML/master/startuml.puml
+
 skinparam componentStyle uml2
 skinparam componentStyle rectangle
 hide @unlinked
