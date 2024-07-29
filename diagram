@@ -1,0 +1,13 @@
+@startuml
+
+%set_variable_value("RELATIVE_INCLUDE", "https://raw.githubusercontent.com/dchizhikov/UML/master/startuml.puml")
+%set_variable_value("RELATIVE_INCLUDE_2", "https://raw.githubusercontent.com/dchizhikov/UML/master/plantuml_css.puml")
+
+!include <archimate/Archimate>
+Motivation_Stakeholder(StakeholderElement, "Stakeholder Description")
+Business_Service(BService, "Business Service")
+
+!include RELATIVE_INCLUDE
+!include RELATIVE_INCLUDE_2
+
+@enduml
