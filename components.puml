@@ -9,7 +9,7 @@
   !endwhile
 !endprocedure
 
-!procedure $interfaces3($names, $arg)
+!procedure $interfaces($names, $arg)
   !while $arg!=0
     !$arg1=$arg - 1
     !$name=$names.name[$arg1]
