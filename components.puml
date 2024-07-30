@@ -3,14 +3,19 @@
   !while $arg!=0
     !$arg1=$arg - 1
     !$name=$names.name[$arg1]
-    !$ps_name = "system_"+$arg
+    !$ps_name = "comp_"+$arg
     [$name] as $ps_name <<subsystem>>
     !$arg = $arg - 1
   !endwhile
-
 !endprocedure
-!procedure $interfaces($name1, $name2)
-  () $name1 as iF_1
-  () $name2 as iF_2
+
+!procedure $interfaces($names, $arg)
+  !while $arg!=0
+    !$arg1=$arg - 1
+    !$name=$names.name[$arg1]
+    !$ps_name = "iF_"+$arg
+    () $name as $ps_name
+    !$arg = $arg - 1
+  !endwhile
 !endprocedure
 @enduml
