@@ -1,0 +1,7 @@
+@startuml
+!procedure $go($name1, $name2)
+  component $name1 as system_1 <<subsystem>>
+  component $name2 as system_2 <<subsystem>>
+!endprocedure
+
+@enduml
