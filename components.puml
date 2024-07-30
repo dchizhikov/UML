@@ -1,9 +1,10 @@
 @startuml
 !procedure $components($names, $arg)
   !while $arg!=0
-    !$name=$names.name[$arg]
+    !$arg1=$arg - 1
+    !$name=$names.name[$arg1]
     !$ps_name = "system_"+$arg
-    [Component $name] as $ps_name <<subsystem>>
+    [$name] as $ps_name <<subsystem>>
     !$arg = $arg - 1
   !endwhile
 
