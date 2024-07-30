@@ -1,7 +1,12 @@
 @startuml
-!procedure $components($name1, $name2)
-  component $name1 as system_1 <<subsystem>>
-  component $name2 as system_2 <<subsystem>>
+!procedure $components($names, $arg)
+  !while $arg!=0
+    !$name=$names.name[$arg]
+    !$ps_name = "system_"+$arg
+    [Component $name] as $ps_name <<subsystem>>
+    !$arg = $arg - 1
+  !endwhile
+
 !endprocedure
 !procedure $interfaces($name1, $name2)
   () $name1 as iF_1
