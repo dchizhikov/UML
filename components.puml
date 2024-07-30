@@ -9,12 +9,12 @@
   !endwhile
 !endprocedure
 
-!procedure $interfaces($names, $arg)
+!procedure $interfaces2($names, $arg)
   !while $arg!=0
     !$arg1=$arg - 1
     !$name=$names.name[$arg1]
     !$ps_name = "iF_"+$arg
-'    () $name as $ps_name
+    () $name as $ps_name
     !$arg = $arg - 1
   !endwhile
 !endprocedure
