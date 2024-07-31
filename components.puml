@@ -1,5 +1,5 @@
 @startuml
-!procedure $components($names, $arg)
+!procedure $components1($names, $arg)
   !while $arg!=0
     !$arg1=$arg - 1
     !$name=$names.name[$arg1]
