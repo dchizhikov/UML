@@ -1,15 +1,16 @@
 @startuml
-!procedure $structures($names, $arg)
-  component $names.id[0] as system_1 <<subsystem>>{
-  !while $arg!=0
-    !$arg1=$arg - 1
-    !$name=$names.id[0]+"_comp_"+$arg
-    [$name]
-    !$arg = $arg - 1
-  !endwhile
-}
-!endprocedure
 
+!procedure $structures($names, $arg)
+  component "$names.id[1]" as $names.id[0] <<subsystem>>{
+  !$arg2=0
+  !while $arg2!=$arg
+    !$name=$names.name[$arg2]
+    !$ps_name = $names.id[0]+"_comp_"+$arg2
+    [$name] as $ps_name
+    !$arg2 = $arg2 + 1
+  !endwhile
+  }
+!endprocedure
 
 !procedure $components($names, $arg)
   !while $arg!=0
@@ -30,4 +31,5 @@
     !$arg = $arg - 1
   !endwhile
 !endprocedure
+
 @enduml
