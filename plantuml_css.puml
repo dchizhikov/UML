@@ -1,6 +1,6 @@
 @startuml
 skinparam linetype polyline
-skinparam linetype ortho
+'skinparam linetype ortho
 
 skinparam component {
     backgroundColor<<subsystem>> aqua-white
