@@ -3,7 +3,7 @@
   component $names.id[0] as system_1 <<subsystem>>{
   !while $arg!=0
     !$arg1=$arg - 1
-    !$name=$names.name[$arg1]
+    !$name=$names.id[0]+"_comp_"+$arg
     [$name]
     !$arg = $arg - 1
   !endwhile
