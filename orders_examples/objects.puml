@@ -40,11 +40,4 @@ object "Склад" as Stock{
     +addProduct(Product)
     +deleteProduct(Product)
 }
-
-Customer "1" --> "0..*" Order : делает >
-Order "0..*" o- "1..*" Product : включает >
-Product "0..*" <-up- "1" Provider : делает <
-Product "1" *--> "1..*" Product : состоит
-Order "1..*" <-- "1" Delivery : везет <
-Product "0..*" <-- "1..*" Stock : хранит <
 @enduml
