@@ -1,0 +1,33 @@
+@startuml
+class Покупатель {
+    +id: Integer
+    +имя: String
+    +email: String
+    + createOrder(Товар)
+}
+
+class Товар {
+    +id: Integer
+    +название: String
+    +цена: Float
+    + addProduct(Товар)
+}
+
+class Заказ {
+    +id: Integer
+    +дата: Date
+    +статус: String
+    + add_product(Товар)
+}
+
+class Поставщик {
+    +id: Integer
+    +название: String
+    +контакты: String
+}
+
+Покупатель "1" --> "0..*" Заказ : делает >
+Заказ "0..*" *- "1..*" Товар : включает >
+Товар "0..*" <-up- "1" Поставщик : поставляет <
+Товар "1" *--> "1..*" Товар : состоит
+@enduml
