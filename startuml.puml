@@ -3,7 +3,6 @@
 
 skinparam componentStyle uml2
 skinparam componentStyle rectangle
-hide @unlinked
 'hide $iPOST
 
 component "ЕТП" as system_1 <<subsystem>> {
