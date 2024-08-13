@@ -1,6 +1,11 @@
 @startuml
-%set_variable_value("objects", "https://raw.githubusercontent.com/dchizhikov/UML/master/orders_examples/objects.puml")
-!include objects
+!config={"id": [], "objects": "https://dchizhikov.github.io/UML/orders_examples/objects.puml", "age": 44}
+
+'!objects = "https://dchizhikov.github.io/UML/orders_examples/objects.puml"
+'%set_variable_value("objects", objects)
+!include config.objects
+'!Float = "real-79487"
+'!a1=%load_json("https://dchizhikov.github.io/UML/orders_examples/1.json")
 
 Customer "1" --> "0..*" Order : делает >
 Order "0..*" o- "1..*" Product : включает >
