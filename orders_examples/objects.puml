@@ -2,6 +2,7 @@
 %set_variable_value("String", "text")
 %set_variable_value("Integer", "int")
 !Float = "real64"
+!Date = "datetime"
 
 object "Покупатель" as Customer{
     +id: Integer
