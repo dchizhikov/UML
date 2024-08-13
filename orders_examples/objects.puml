@@ -1,6 +1,6 @@
 @startuml
 %set_variable_value("String", "text")
-%set_variable_value("Integer", "int")
+%set_variable_value("Integer", "int64")
 !Float = "real"
 !Date = "datetime"
 
