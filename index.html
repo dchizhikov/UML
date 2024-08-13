@@ -1,1 +1,16 @@
-Тест
+# Initialize a Git repository
+git init
+
+# Add your PlantUML diagrams and commit
+git add .
+git commit -m "Added initial version of component diagrams"
+
+# Create a new branch for a feature
+git checkout -b feature/add-authentication
+
+# Make changes and commit
+git commit -m "Added authentication components"
+
+# Merge the feature branch into the main branch
+git checkout main
+git merge feature/add-authentication
