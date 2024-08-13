@@ -1,4 +1,6 @@
 @startuml
+%set_variable_value("String", "text")
+ 
 object "Покупатель" as Customer{
     +id: Integer
     +имя: String
