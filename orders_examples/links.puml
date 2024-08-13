@@ -1,13 +1,10 @@
 @startuml
-!config={"id": [], "objects": "https://dchizhikov.github.io/UML/orders_examples/objects.puml", "age": 44}
+!config=%load_json("https://dchizhikov.github.io/UML/orders_examples/config.json")
 
-'!objects = "https://dchizhikov.github.io/UML/orders_examples/objects.puml"
-'%set_variable_value("objects", objects)
 !include config.objects
-'!Float = "real-79487"
-'!a1=%load_json("https://dchizhikov.github.io/UML/orders_examples/1.json")
+!age = config.age
 
-Customer "1" --> "0..*" Order : делает >
+Customer "1" --> "0..*" Order : делает > age
 Order "0..*" o- "1..*" Product : включает >
 Product "0..*" <-up- "1" Provider : делает <
 Product "1" *--> "1..*" Product : состоит
