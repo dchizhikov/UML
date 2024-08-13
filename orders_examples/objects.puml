@@ -1,6 +1,7 @@
 @startuml
 %set_variable_value("String", "text")
 %set_variable_value("Integer", "int")
+!Float = "real"
 
 object "Покупатель" as Customer{
     +id: Integer
