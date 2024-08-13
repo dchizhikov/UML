@@ -4,7 +4,7 @@
 !Float = "real64"
 !Date = "datetime"
 
-object "Покупатель" as Customer{
+object "Покупатель-0" as Customer{
     +id: Integer
     +имя: String
     +email: String
