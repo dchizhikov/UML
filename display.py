@@ -1,3 +1,4 @@
+import os
 os.system("pip install plantweb")
 from IPython.display import display, Image, SVG
 
@@ -5,7 +6,7 @@ path = "/content/UML/orders_examples/"
 file_name="config"
 file_format="png" # ["svg", "png"]
 
-def display_scheme(path, file_name, file_format="svg")
+def display_scheme(path, file_name, file_format="svg"):
   os.chdir(path)
   f_in=file_name+".puml"
   os.system(f"plantweb --format {file_format} --no-cache {f_in}") #!plantweb --no-cache $f_in
