@@ -1,0 +1,4 @@
+@startjson
+!config=%load_json("https://dchizhikov.github.io/UML/orders_examples/config.json")
+config
+@endjson
