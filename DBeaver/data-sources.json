@@ -1,0 +1,1345 @@
+{
+	"folders": {
+		"МЭШ.Контингент": {
+			"parent": "_Архив"
+		},
+		"МЭШ.Шлюз": {
+			"parent": "_Архив"
+		},
+		"МЭШ.ЭЖ": {
+			"parent": "_Архив"
+		},
+		"МЭШ.НСИ": {
+			"parent": "_Архив"
+		},
+		"МЭШ.ЭОМ": {
+			"parent": "_Архив"
+		},
+		"МЭШ.АУПД": {
+			"parent": "_Архив"
+		},
+		"_Архив": {},
+		"МЭШ": {},
+		"DEPERS ПДн": {
+			"parent": "_Архив"
+		}
+	},
+	"connections": {
+		"postgres-jdbc-181f6980230-51f2d3e791c47cb9": {
+			"provider": "postgresql",
+			"driver": "postgres-jdbc",
+			"name": "cnt_prod_ro",
+			"save-password": true,
+			"show-system-objects": true,
+			"read-only": false,
+			"folder": "_Архив/МЭШ.Контингент",
+			"configuration": {
+				"host": "10.206.251.134",
+				"port": "6432",
+				"database": "cnt_prod_ro",
+				"url": "jdbc:postgresql://10.206.251.134:6432/cnt_prod_ro",
+				"home": "postgresql_client",
+				"type": "prod",
+				"properties": {
+					"connectTimeout": "20",
+					"loginTimeout": "20"
+				},
+				"provider-properties": {
+					"@dbeaver-show-non-default-db@": "false",
+					"@dbeaver-show-template-db@": "false",
+					"@dbeaver-show-unavailable-db@": "false",
+					"@dbeaver-read-all-data-types-db@": "false",
+					"postgresql.dd.plain.string": "false",
+					"postgresql.dd.tag.string": "false"
+				},
+				"auth-model": "native"
+			},
+			"custom-properties": {
+				"database.meta.separate.connection": "false"
+			}
+		},
+		"postgres-jdbc-1821a96b4d6-92574816179f965": {
+			"provider": "postgresql",
+			"driver": "postgres-jdbc",
+			"name": "cnt_dev_ro",
+			"save-password": true,
+			"show-system-objects": true,
+			"read-only": false,
+			"folder": "_Архив/МЭШ.Контингент",
+			"configuration": {
+				"host": "meshkub-rke01t.passport.local",
+				"port": "6432",
+				"database": "cnt_dev_ro",
+				"url": "jdbc:postgresql://meshkub-rke01t.passport.local:6432/cnt_dev_ro",
+				"home": "postgresql_client",
+				"type": "dev",
+				"provider-properties": {
+					"@dbeaver-show-non-default-db@": "false",
+					"@dbeaver-show-template-db@": "false",
+					"@dbeaver-show-unavailable-db@": "false",
+					"@dbeaver-read-all-data-types-db@": "false",
+					"postgresql.dd.plain.string": "false",
+					"postgresql.dd.tag.string": "false"
+				},
+				"auth-model": "native"
+			},
+			"custom-properties": {
+				"database.meta.separate.connection": "false"
+			}
+		},
+		"postgres-jdbc-182a0b4ef3e-62bb2bea6d92dd20": {
+			"provider": "postgresql",
+			"driver": "postgres-jdbc",
+			"name": "cnt_stage_ro",
+			"save-password": true,
+			"show-system-objects": true,
+			"read-only": false,
+			"folder": "_Архив/МЭШ.Контингент",
+			"configuration": {
+				"host": "10.15.166.16",
+				"port": "6432",
+				"database": "cnt_stage_ro",
+				"url": "jdbc:postgresql://10.15.166.16:6432/cnt_stage_ro",
+				"home": "postgresql_client",
+				"type": "dev",
+				"provider-properties": {
+					"@dbeaver-show-non-default-db@": "false",
+					"@dbeaver-show-template-db@": "false",
+					"@dbeaver-show-unavailable-db@": "false",
+					"@dbeaver-read-all-data-types-db@": "false",
+					"postgresql.dd.plain.string": "false",
+					"postgresql.dd.tag.string": "false"
+				},
+				"auth-model": "native"
+			},
+			"custom-properties": {
+				"database.meta.separate.connection": "false"
+			}
+		},
+		"postgres-jdbc-183e5ee99a9-760ae5db68adb517": {
+			"provider": "postgresql",
+			"driver": "postgres-jdbc",
+			"name": "postgres",
+			"save-password": true,
+			"show-system-objects": true,
+			"read-only": false,
+			"folder": "_Архив/МЭШ.Контингент",
+			"configuration": {
+				"host": "localhost",
+				"port": "51234",
+				"database": "contingent",
+				"url": "jdbc:postgresql://localhost:51234/contingent",
+				"home": "postgresql_client",
+				"type": "dev",
+				"provider-properties": {
+					"@dbeaver-show-non-default-db@": "false",
+					"@dbeaver-show-template-db@": "false",
+					"@dbeaver-show-unavailable-db@": "false",
+					"@dbeaver-read-all-data-types-db@": "false",
+					"postgresql.dd.plain.string": "false",
+					"postgresql.dd.tag.string": "false"
+				},
+				"auth-model": "native"
+			},
+			"custom-properties": {
+				"database.meta.separate.connection": "false"
+			}
+		},
+		"postgres-jdbc-183f54d1eaa-2393646c9cd40928": {
+			"provider": "postgresql",
+			"driver": "postgres-jdbc",
+			"name": "gateway",
+			"save-password": true,
+			"show-system-objects": true,
+			"read-only": false,
+			"folder": "_Архив/МЭШ.Шлюз",
+			"configuration": {
+				"host": "10.15.79.27",
+				"port": "5432",
+				"database": "gateway",
+				"url": "jdbc:postgresql://10.15.79.27:5432/gateway",
+				"home": "postgresql_client",
+				"type": "dev",
+				"provider-properties": {
+					"@dbeaver-show-non-default-db@": "false",
+					"@dbeaver-show-template-db@": "false",
+					"@dbeaver-show-unavailable-db@": "false",
+					"@dbeaver-read-all-data-types-db@": "false",
+					"postgresql.dd.plain.string": "false",
+					"postgresql.dd.tag.string": "false"
+				},
+				"auth-model": "native"
+			},
+			"custom-properties": {
+				"database.meta.separate.connection": "false"
+			}
+		},
+		"postgres-jdbc-1841466bfb1-ff74a3b66ad5958": {
+			"provider": "postgresql",
+			"driver": "postgres-jdbc",
+			"name": "gateway 2",
+			"save-password": true,
+			"show-system-objects": true,
+			"read-only": false,
+			"folder": "_Архив/МЭШ.Шлюз",
+			"configuration": {
+				"host": "10.15.79.19",
+				"port": "5432",
+				"database": "gateway",
+				"url": "jdbc:postgresql://10.15.79.19:5432/gateway",
+				"home": "postgresql_client",
+				"type": "dev",
+				"provider-properties": {
+					"@dbeaver-show-non-default-db@": "false",
+					"@dbeaver-show-template-db@": "false",
+					"@dbeaver-show-unavailable-db@": "false",
+					"@dbeaver-read-all-data-types-db@": "false",
+					"postgresql.dd.plain.string": "false",
+					"postgresql.dd.tag.string": "false"
+				},
+				"auth-model": "native"
+			},
+			"custom-properties": {
+				"database.meta.separate.connection": "false"
+			}
+		},
+		"postgres-jdbc-1888f555540-186ed35c8e37b592": {
+			"provider": "postgresql",
+			"driver": "postgres-jdbc",
+			"name": "cnt_stage_ro_lk",
+			"save-password": true,
+			"show-system-objects": true,
+			"read-only": false,
+			"folder": "_Архив/МЭШ.Контингент",
+			"configuration": {
+				"host": "10.15.166.16",
+				"port": "6432",
+				"database": "cnt_stage_ro_lk",
+				"url": "jdbc:postgresql://10.15.166.16:6432/cnt_stage_ro_lk",
+				"home": "postgresql_client",
+				"type": "dev",
+				"provider-properties": {
+					"@dbeaver-show-non-default-db@": "false",
+					"@dbeaver-show-template-db@": "false",
+					"@dbeaver-show-unavailable-db@": "false",
+					"@dbeaver-read-all-data-types-db@": "false",
+					"postgresql.dd.plain.string": "false",
+					"postgresql.dd.tag.string": "false"
+				},
+				"auth-model": "native"
+			},
+			"custom-properties": {
+				"database.meta.separate.connection": "false"
+			}
+		},
+		"postgres-jdbc-1889af606f7-7a735885c330b1d4": {
+			"provider": "postgresql",
+			"driver": "postgres-jdbc",
+			"name": "ezd_stage_ro_2021",
+			"save-password": true,
+			"show-system-objects": true,
+			"read-only": false,
+			"folder": "_Архив/МЭШ.ЭЖ",
+			"configuration": {
+				"host": "10.15.166.16",
+				"port": "6432",
+				"database": "ezd_stage_ro_2021",
+				"url": "jdbc:postgresql://10.15.166.16:6432/ezd_stage_ro_2021",
+				"home": "postgresql_client",
+				"type": "dev",
+				"provider-properties": {
+					"@dbeaver-show-non-default-db@": "false",
+					"@dbeaver-show-template-db@": "false",
+					"@dbeaver-show-unavailable-db@": "false",
+					"@dbeaver-read-all-data-types-db@": "false",
+					"postgresql.dd.plain.string": "false",
+					"postgresql.dd.tag.string": "false"
+				},
+				"auth-model": "native"
+			},
+			"custom-properties": {
+				"database.meta.separate.connection": "false"
+			}
+		},
+		"postgres-jdbc-188b9c1e609-7e4d4d6e847f12e9": {
+			"provider": "postgresql",
+			"driver": "postgres-jdbc",
+			"name": "nsi3_stage_ro",
+			"save-password": true,
+			"show-system-objects": true,
+			"read-only": false,
+			"folder": "_Архив/МЭШ.НСИ",
+			"configuration": {
+				"host": "10.206.251.134",
+				"port": "6432",
+				"database": "nsi3_stage_ro",
+				"url": "jdbc:postgresql://10.206.251.134:6432/nsi3_stage_ro",
+				"home": "postgresql_client",
+				"type": "dev",
+				"provider-properties": {
+					"@dbeaver-show-non-default-db@": "false",
+					"@dbeaver-show-template-db@": "false",
+					"@dbeaver-show-unavailable-db@": "false",
+					"@dbeaver-read-all-data-types-db@": "false",
+					"postgresql.dd.plain.string": "false",
+					"postgresql.dd.tag.string": "false"
+				},
+				"auth-model": "native"
+			},
+			"custom-properties": {
+				"database.meta.separate.connection": "false"
+			}
+		},
+		"postgres-jdbc-188b9c3446b-342d2fd09d2550bb": {
+			"provider": "postgresql",
+			"driver": "postgres-jdbc",
+			"name": "nsi3api_stage_ro",
+			"save-password": true,
+			"show-system-objects": true,
+			"read-only": false,
+			"folder": "_Архив/МЭШ.НСИ",
+			"configuration": {
+				"host": "10.15.166.16",
+				"port": "6432",
+				"database": "nsi3api_stage_ro",
+				"url": "jdbc:postgresql://10.15.166.16:6432/nsi3api_stage_ro",
+				"home": "postgresql_client",
+				"type": "dev",
+				"provider-properties": {
+					"@dbeaver-show-non-default-db@": "false",
+					"@dbeaver-show-template-db@": "false",
+					"@dbeaver-show-unavailable-db@": "false",
+					"@dbeaver-read-all-data-types-db@": "false",
+					"postgresql.dd.plain.string": "false",
+					"postgresql.dd.tag.string": "false"
+				},
+				"auth-model": "native"
+			},
+			"custom-properties": {
+				"database.meta.separate.connection": "false"
+			}
+		},
+		"postgres-jdbc-188dcfe3dd4-2c3dc28974127485": {
+			"provider": "postgresql",
+			"driver": "postgres-jdbc",
+			"name": "ezd_stage_ro",
+			"save-password": true,
+			"show-system-objects": true,
+			"read-only": false,
+			"folder": "_Архив/МЭШ.ЭЖ",
+			"configuration": {
+				"host": "10.206.251.134",
+				"port": "6432",
+				"database": "ezd_stage_ro",
+				"url": "jdbc:postgresql://10.206.251.134:6432/ezd_stage_ro",
+				"home": "postgresql_client",
+				"type": "dev",
+				"provider-properties": {
+					"@dbeaver-show-non-default-db@": "false",
+					"@dbeaver-show-template-db@": "false",
+					"@dbeaver-show-unavailable-db@": "false",
+					"@dbeaver-read-all-data-types-db@": "false",
+					"postgresql.dd.plain.string": "false",
+					"postgresql.dd.tag.string": "false"
+				},
+				"auth-model": "native"
+			},
+			"custom-properties": {
+				"database.meta.separate.connection": "false"
+			}
+		},
+		"postgres-jdbc-188dcffbcc6-758069befde95f95": {
+			"provider": "postgresql",
+			"driver": "postgres-jdbc",
+			"name": "ezd_stage_ro_logs",
+			"save-password": true,
+			"show-system-objects": true,
+			"read-only": false,
+			"folder": "_Архив/МЭШ.ЭЖ",
+			"configuration": {
+				"host": "10.15.166.16",
+				"port": "6432",
+				"database": "ezd_stage_ro_logs",
+				"url": "jdbc:postgresql://10.15.166.16:6432/ezd_stage_ro_logs",
+				"home": "postgresql_client",
+				"type": "dev",
+				"provider-properties": {
+					"@dbeaver-show-non-default-db@": "false",
+					"@dbeaver-show-template-db@": "false",
+					"@dbeaver-show-unavailable-db@": "false",
+					"@dbeaver-read-all-data-types-db@": "false",
+					"postgresql.dd.plain.string": "false",
+					"postgresql.dd.tag.string": "false"
+				},
+				"auth-model": "native"
+			},
+			"custom-properties": {
+				"database.meta.separate.connection": "false"
+			}
+		},
+		"postgres-jdbc-188dd002853-4adcf11e6804a01c": {
+			"provider": "postgresql",
+			"driver": "postgres-jdbc",
+			"name": "ezd_stage_ro_int_lms",
+			"save-password": true,
+			"show-system-objects": true,
+			"read-only": false,
+			"folder": "_Архив/МЭШ.ЭЖ",
+			"configuration": {
+				"host": "10.15.166.16",
+				"port": "6432",
+				"database": "ezd_stage_ro_int_lms",
+				"url": "jdbc:postgresql://10.15.166.16:6432/ezd_stage_ro_int_lms",
+				"home": "postgresql_client",
+				"type": "dev",
+				"provider-properties": {
+					"@dbeaver-show-non-default-db@": "false",
+					"@dbeaver-show-template-db@": "false",
+					"@dbeaver-show-unavailable-db@": "false",
+					"@dbeaver-read-all-data-types-db@": "false",
+					"postgresql.dd.plain.string": "false",
+					"postgresql.dd.tag.string": "false"
+				},
+				"auth-model": "native"
+			},
+			"custom-properties": {
+				"database.meta.separate.connection": "false"
+			}
+		},
+		"postgres-jdbc-188dd00cd29-2eebdc7c129c4ed8": {
+			"provider": "postgresql",
+			"driver": "postgres-jdbc",
+			"name": "ezd_stage_ro_int_cnt",
+			"save-password": true,
+			"show-system-objects": true,
+			"read-only": false,
+			"folder": "_Архив/МЭШ.ЭЖ",
+			"configuration": {
+				"host": "10.15.166.16",
+				"port": "6432",
+				"database": "ezd_stage_ro_int_cnt",
+				"url": "jdbc:postgresql://10.15.166.16:6432/ezd_stage_ro_int_cnt",
+				"home": "postgresql_client",
+				"type": "dev",
+				"provider-properties": {
+					"@dbeaver-show-non-default-db@": "false",
+					"@dbeaver-show-template-db@": "false",
+					"@dbeaver-show-unavailable-db@": "false",
+					"@dbeaver-read-all-data-types-db@": "false",
+					"postgresql.dd.plain.string": "false",
+					"postgresql.dd.tag.string": "false"
+				},
+				"auth-model": "native"
+			},
+			"custom-properties": {
+				"database.meta.separate.connection": "false"
+			}
+		},
+		"postgres-jdbc-188dd014dec-a0dd3d9232ab182": {
+			"provider": "postgresql",
+			"driver": "postgres-jdbc",
+			"name": "ezd_stage_ro_soc",
+			"save-password": true,
+			"show-system-objects": true,
+			"read-only": false,
+			"folder": "_Архив/МЭШ.ЭЖ",
+			"configuration": {
+				"host": "10.15.166.16",
+				"port": "6432",
+				"database": "ezd_stage_ro_soc",
+				"url": "jdbc:postgresql://10.15.166.16:6432/ezd_stage_ro_soc",
+				"home": "postgresql_client",
+				"type": "dev",
+				"provider-properties": {
+					"@dbeaver-show-non-default-db@": "false",
+					"@dbeaver-show-template-db@": "false",
+					"@dbeaver-show-unavailable-db@": "false",
+					"@dbeaver-read-all-data-types-db@": "false",
+					"postgresql.dd.plain.string": "false",
+					"postgresql.dd.tag.string": "false"
+				},
+				"auth-model": "native"
+			},
+			"custom-properties": {
+				"database.meta.separate.connection": "false"
+			}
+		},
+		"postgres-jdbc-188dd020c42-3d0511397744721f": {
+			"provider": "postgresql",
+			"driver": "postgres-jdbc",
+			"name": "ezd_stage_ro_ae",
+			"save-password": true,
+			"show-system-objects": true,
+			"read-only": false,
+			"folder": "_Архив/МЭШ.ЭЖ",
+			"configuration": {
+				"host": "10.15.166.16",
+				"port": "6432",
+				"database": "ezd_stage_ro_ae",
+				"url": "jdbc:postgresql://10.15.166.16:6432/ezd_stage_ro_ae",
+				"home": "postgresql_client",
+				"type": "dev",
+				"provider-properties": {
+					"@dbeaver-show-non-default-db@": "false",
+					"@dbeaver-show-template-db@": "false",
+					"@dbeaver-show-unavailable-db@": "false",
+					"@dbeaver-read-all-data-types-db@": "false",
+					"postgresql.dd.plain.string": "false",
+					"postgresql.dd.tag.string": "false"
+				},
+				"auth-model": "native"
+			},
+			"custom-properties": {
+				"database.meta.separate.connection": "false"
+			}
+		},
+		"postgres-jdbc-188dd028116-5df9a3dfa62270f8": {
+			"provider": "postgresql",
+			"driver": "postgres-jdbc",
+			"name": "ezd_stage_ro_sbc",
+			"save-password": true,
+			"show-system-objects": true,
+			"read-only": false,
+			"folder": "_Архив/МЭШ.ЭЖ",
+			"configuration": {
+				"host": "10.15.166.16",
+				"port": "6432",
+				"database": "ezd_stage_ro_sbc",
+				"url": "jdbc:postgresql://10.15.166.16:6432/ezd_stage_ro_sbc",
+				"home": "postgresql_client",
+				"type": "dev",
+				"provider-properties": {
+					"@dbeaver-show-non-default-db@": "false",
+					"@dbeaver-show-template-db@": "false",
+					"@dbeaver-show-unavailable-db@": "false",
+					"@dbeaver-read-all-data-types-db@": "false",
+					"postgresql.dd.plain.string": "false",
+					"postgresql.dd.tag.string": "false"
+				},
+				"auth-model": "native"
+			},
+			"custom-properties": {
+				"database.meta.separate.connection": "false"
+			}
+		},
+		"postgres-jdbc-188dd02f555-265afeab1ed61656": {
+			"provider": "postgresql",
+			"driver": "postgres-jdbc",
+			"name": "ezd_stage_ro_acl",
+			"save-password": true,
+			"show-system-objects": true,
+			"read-only": false,
+			"folder": "_Архив/МЭШ.ЭЖ",
+			"configuration": {
+				"host": "10.15.166.16",
+				"port": "6432",
+				"database": "ezd_stage_ro_acl",
+				"url": "jdbc:postgresql://10.15.166.16:6432/ezd_stage_ro_acl",
+				"home": "postgresql_client",
+				"type": "dev",
+				"provider-properties": {
+					"@dbeaver-show-non-default-db@": "false",
+					"@dbeaver-show-template-db@": "false",
+					"@dbeaver-show-unavailable-db@": "false",
+					"@dbeaver-read-all-data-types-db@": "false",
+					"postgresql.dd.plain.string": "false",
+					"postgresql.dd.tag.string": "false"
+				},
+				"auth-model": "native"
+			},
+			"custom-properties": {
+				"database.meta.separate.connection": "false"
+			}
+		},
+		"postgres-jdbc-188dd035eab-5f1e5d28e54b85a": {
+			"provider": "postgresql",
+			"driver": "postgres-jdbc",
+			"name": "ezd_stage_ro_marks",
+			"save-password": true,
+			"show-system-objects": true,
+			"read-only": false,
+			"folder": "_Архив/МЭШ.ЭЖ",
+			"configuration": {
+				"host": "10.15.166.16",
+				"port": "6432",
+				"database": "ezd_stage_ro_marks",
+				"url": "jdbc:postgresql://10.15.166.16:6432/ezd_stage_ro_marks",
+				"home": "postgresql_client",
+				"type": "dev",
+				"provider-properties": {
+					"@dbeaver-show-non-default-db@": "false",
+					"@dbeaver-show-template-db@": "false",
+					"@dbeaver-show-unavailable-db@": "false",
+					"@dbeaver-read-all-data-types-db@": "false",
+					"postgresql.dd.plain.string": "false",
+					"postgresql.dd.tag.string": "false"
+				},
+				"auth-model": "native"
+			},
+			"custom-properties": {
+				"database.meta.separate.connection": "false"
+			}
+		},
+		"postgres-jdbc-188dd03c8db-5c9057e0de5c1ab8": {
+			"provider": "postgresql",
+			"driver": "postgres-jdbc",
+			"name": "ezd_stage_ro_epgu",
+			"save-password": true,
+			"show-system-objects": true,
+			"read-only": false,
+			"folder": "_Архив/МЭШ.ЭЖ",
+			"configuration": {
+				"host": "10.15.166.16",
+				"port": "6432",
+				"database": "ezd_stage_ro_epgu",
+				"url": "jdbc:postgresql://10.15.166.16:6432/ezd_stage_ro_epgu",
+				"home": "postgresql_client",
+				"type": "dev",
+				"provider-properties": {
+					"@dbeaver-show-non-default-db@": "false",
+					"@dbeaver-show-template-db@": "false",
+					"@dbeaver-show-unavailable-db@": "false",
+					"@dbeaver-read-all-data-types-db@": "false",
+					"postgresql.dd.plain.string": "false",
+					"postgresql.dd.tag.string": "false"
+				},
+				"auth-model": "native"
+			},
+			"custom-properties": {
+				"database.meta.separate.connection": "false"
+			}
+		},
+		"postgres-jdbc-18921605260-595a46f0ce560b43": {
+			"provider": "postgresql",
+			"driver": "postgres-jdbc",
+			"name": "eom_stage_ro",
+			"save-password": true,
+			"show-system-objects": true,
+			"read-only": false,
+			"folder": "_Архив/МЭШ.ЭОМ",
+			"configuration": {
+				"host": "10.206.251.134",
+				"port": "6432",
+				"database": "eom_stage_ro",
+				"url": "jdbc:postgresql://10.206.251.134:6432/eom_stage_ro",
+				"home": "postgresql_client",
+				"type": "dev",
+				"provider-properties": {
+					"@dbeaver-show-non-default-db@": "false",
+					"@dbeaver-show-template-db@": "false",
+					"@dbeaver-show-unavailable-db@": "false",
+					"@dbeaver-read-all-data-types-db@": "false",
+					"postgresql.dd.plain.string": "false",
+					"postgresql.dd.tag.string": "false"
+				},
+				"auth-model": "native"
+			},
+			"custom-properties": {
+				"database.meta.separate.connection": "false"
+			}
+		},
+		"postgres-jdbc-1892161b947-23539853be757755": {
+			"provider": "postgresql",
+			"driver": "postgres-jdbc",
+			"name": "eom_stage_ro_mresh",
+			"save-password": true,
+			"show-system-objects": true,
+			"read-only": false,
+			"folder": "_Архив/МЭШ.ЭОМ",
+			"configuration": {
+				"host": "10.15.166.16",
+				"port": "6432",
+				"database": "eom_stage_ro_mresh",
+				"url": "jdbc:postgresql://10.15.166.16:6432/eom_stage_ro_mresh",
+				"home": "postgresql_client",
+				"type": "dev",
+				"provider-properties": {
+					"@dbeaver-show-non-default-db@": "false",
+					"@dbeaver-show-template-db@": "false",
+					"@dbeaver-show-unavailable-db@": "false",
+					"@dbeaver-read-all-data-types-db@": "false",
+					"postgresql.dd.plain.string": "false",
+					"postgresql.dd.tag.string": "false"
+				},
+				"auth-model": "native"
+			},
+			"custom-properties": {
+				"database.meta.separate.connection": "false"
+			}
+		},
+		"postgres-jdbc-1892161cf1b-7cbcf8b7fea1f3c4": {
+			"provider": "postgresql",
+			"driver": "postgres-jdbc",
+			"name": "eom_stage_ro_acl",
+			"save-password": true,
+			"show-system-objects": true,
+			"read-only": false,
+			"folder": "_Архив/МЭШ.ЭОМ",
+			"configuration": {
+				"host": "10.15.166.16",
+				"port": "6432",
+				"database": "eom_stage_ro_acl",
+				"url": "jdbc:postgresql://10.15.166.16:6432/eom_stage_ro_acl",
+				"home": "postgresql_client",
+				"type": "dev",
+				"provider-properties": {
+					"@dbeaver-show-non-default-db@": "false",
+					"@dbeaver-show-template-db@": "false",
+					"@dbeaver-show-unavailable-db@": "false",
+					"@dbeaver-read-all-data-types-db@": "false",
+					"postgresql.dd.plain.string": "false",
+					"postgresql.dd.tag.string": "false"
+				},
+				"auth-model": "native"
+			},
+			"custom-properties": {
+				"database.meta.separate.connection": "false"
+			}
+		},
+		"postgres-jdbc-1892161d1ce-2a66b9b67ad506ac": {
+			"provider": "postgresql",
+			"driver": "postgres-jdbc",
+			"name": "eom_stage_ro_acl_mresh",
+			"save-password": true,
+			"show-system-objects": true,
+			"read-only": false,
+			"folder": "_Архив/МЭШ.ЭОМ",
+			"configuration": {
+				"host": "10.15.166.16",
+				"port": "6432",
+				"database": "eom_stage_ro_acl_mresh",
+				"url": "jdbc:postgresql://10.15.166.16:6432/eom_stage_ro_acl_mresh",
+				"home": "postgresql_client",
+				"type": "dev",
+				"provider-properties": {
+					"@dbeaver-show-non-default-db@": "false",
+					"@dbeaver-show-template-db@": "false",
+					"@dbeaver-show-unavailable-db@": "false",
+					"@dbeaver-read-all-data-types-db@": "false",
+					"postgresql.dd.plain.string": "false",
+					"postgresql.dd.tag.string": "false"
+				},
+				"auth-model": "native"
+			},
+			"custom-properties": {
+				"database.meta.separate.connection": "false"
+			}
+		},
+		"postgres-jdbc-1892161d40b-728a75a67b48b311": {
+			"provider": "postgresql",
+			"driver": "postgres-jdbc",
+			"name": "lrs_stage_ro",
+			"save-password": true,
+			"show-system-objects": true,
+			"read-only": false,
+			"folder": "_Архив/МЭШ.ЭОМ",
+			"configuration": {
+				"host": "mes-kubernetes-test.mos.ru",
+				"port": "6432",
+				"database": "lrs_stage_ro",
+				"url": "jdbc:postgresql://mes-kubernetes-test.mos.ru:6432/lrs_stage_ro",
+				"home": "postgresql_client",
+				"type": "dev",
+				"provider-properties": {
+					"@dbeaver-show-non-default-db@": "false",
+					"@dbeaver-show-template-db@": "false",
+					"@dbeaver-show-unavailable-db@": "false",
+					"@dbeaver-read-all-data-types-db@": "false",
+					"postgresql.dd.plain.string": "false",
+					"postgresql.dd.tag.string": "false"
+				},
+				"auth-model": "native"
+			},
+			"custom-properties": {
+				"database.meta.separate.connection": "false"
+			}
+		},
+		"postgres-jdbc-18987ef2398-46093d4e7720131b": {
+			"provider": "postgresql",
+			"driver": "postgres-jdbc",
+			"name": "MK postgres 2",
+			"save-password": true,
+			"show-system-objects": true,
+			"read-only": false,
+			"folder": "_Архив/DEPERS ПДн",
+			"configuration": {
+				"host": "10.15.129.130",
+				"port": "10049",
+				"database": "postgres",
+				"url": "jdbc:postgresql://10.15.129.130:10049/postgres",
+				"home": "postgresql_client",
+				"type": "dev",
+				"properties": {
+					"connectTimeout": "20",
+					"loginTimeout": "20"
+				},
+				"provider-properties": {
+					"@dbeaver-show-non-default-db@": "false",
+					"@dbeaver-show-template-db@": "false",
+					"@dbeaver-show-unavailable-db@": "false",
+					"@dbeaver-read-all-data-types-db@": "false",
+					"postgresql.dd.plain.string": "false",
+					"postgresql.dd.tag.string": "false"
+				},
+				"auth-model": "native"
+			},
+			"custom-properties": {
+				"database.meta.separate.connection": "false"
+			}
+		},
+		"postgres-jdbc-18ae00d566f-2ab0ecd95a3f49a3": {
+			"provider": "postgresql",
+			"driver": "postgres-jdbc",
+			"name": "nsi",
+			"save-password": true,
+			"show-system-objects": true,
+			"read-only": false,
+			"folder": "_Архив/DEPERS ПДн",
+			"configuration": {
+				"host": "10.15.129.131",
+				"port": "10000",
+				"database": "nsi",
+				"url": "jdbc:postgresql://10.15.129.131:10000/nsi",
+				"home": "postgresql_client",
+				"type": "dev",
+				"provider-properties": {
+					"@dbeaver-show-non-default-db@": "false",
+					"@dbeaver-show-template-db@": "false",
+					"@dbeaver-show-unavailable-db@": "false",
+					"@dbeaver-read-all-data-types-db@": "false",
+					"postgresql.dd.plain.string": "false",
+					"postgresql.dd.tag.string": "false"
+				},
+				"auth-model": "native"
+			}
+		},
+		"postgres-jdbc-18d7e5e18f9-60d9560522d84282": {
+			"provider": "postgresql",
+			"driver": "postgres-jdbc",
+			"name": "aupd_prod_ro",
+			"save-password": true,
+			"show-system-objects": true,
+			"read-only": false,
+			"folder": "_Архив/МЭШ.АУПД",
+			"configuration": {
+				"host": "10.206.251.134",
+				"port": "6432",
+				"database": "aupd_prod_ro",
+				"url": "jdbc:postgresql://10.206.251.134:6432/aupd_prod_ro",
+				"home": "postgresql_client",
+				"type": "prod",
+				"properties": {
+					"connectTimeout": "20",
+					"loginTimeout": "20"
+				},
+				"provider-properties": {
+					"@dbeaver-show-non-default-db@": "false",
+					"@dbeaver-show-template-db@": "false",
+					"@dbeaver-show-unavailable-db@": "false",
+					"@dbeaver-read-all-data-types-db@": "false",
+					"postgresql.dd.plain.string": "false",
+					"postgresql.dd.tag.string": "false"
+				},
+				"auth-model": "native"
+			},
+			"custom-properties": {
+				"database.meta.separate.connection": "false"
+			}
+		},
+		"postgres-jdbc-18dc5b45ae8-71f1a0a14b3bf29": {
+			"provider": "postgresql",
+			"driver": "postgres-jdbc",
+			"name": "aupd_prod_ro_esia",
+			"save-password": true,
+			"show-system-objects": true,
+			"read-only": false,
+			"folder": "_Архив/МЭШ.АУПД",
+			"configuration": {
+				"host": "10.15.166.16",
+				"port": "6432",
+				"database": "aupd_prod_ro_esia",
+				"url": "jdbc:postgresql://10.15.166.16:6432/aupd_prod_ro_esia",
+				"home": "postgresql_client",
+				"type": "prod",
+				"properties": {
+					"connectTimeout": "20",
+					"loginTimeout": "20"
+				},
+				"provider-properties": {
+					"@dbeaver-show-non-default-db@": "false",
+					"@dbeaver-show-template-db@": "false",
+					"@dbeaver-show-unavailable-db@": "false",
+					"@dbeaver-read-all-data-types-db@": "false",
+					"postgresql.dd.plain.string": "false",
+					"postgresql.dd.tag.string": "false"
+				},
+				"auth-model": "native"
+			},
+			"custom-properties": {
+				"database.meta.separate.connection": "false"
+			}
+		},
+		"postgres-jdbc-18dc5c116b7-90e97043be4ebc9": {
+			"provider": "postgresql",
+			"driver": "postgres-jdbc",
+			"name": "aupd_prod_ro_sudir",
+			"save-password": true,
+			"show-system-objects": true,
+			"read-only": false,
+			"folder": "_Архив/МЭШ.АУПД",
+			"configuration": {
+				"host": "10.15.166.16",
+				"port": "6432",
+				"database": "aupd_prod_ro_sudir",
+				"url": "jdbc:postgresql://10.15.166.16:6432/aupd_prod_ro_sudir",
+				"home": "postgresql_client",
+				"type": "prod",
+				"properties": {
+					"connectTimeout": "20",
+					"loginTimeout": "20"
+				},
+				"provider-properties": {
+					"@dbeaver-show-non-default-db@": "false",
+					"@dbeaver-show-template-db@": "false",
+					"@dbeaver-show-unavailable-db@": "false",
+					"@dbeaver-read-all-data-types-db@": "false",
+					"postgresql.dd.plain.string": "false",
+					"postgresql.dd.tag.string": "false"
+				},
+				"auth-model": "native"
+			},
+			"custom-properties": {
+				"database.meta.separate.connection": "false"
+			}
+		},
+		"postgres-jdbc-18dc5c1260e-bd35d10a387c3ce": {
+			"provider": "postgresql",
+			"driver": "postgres-jdbc",
+			"name": "aupd_prod_ro_kauth",
+			"save-password": true,
+			"show-system-objects": true,
+			"read-only": false,
+			"folder": "_Архив/МЭШ.АУПД",
+			"configuration": {
+				"host": "10.15.166.16",
+				"port": "6432",
+				"database": "aupd_prod_ro_kauth",
+				"url": "jdbc:postgresql://10.15.166.16:6432/aupd_prod_ro_kauth",
+				"home": "postgresql_client",
+				"type": "prod",
+				"properties": {
+					"connectTimeout": "20",
+					"loginTimeout": "20"
+				},
+				"provider-properties": {
+					"@dbeaver-show-non-default-db@": "false",
+					"@dbeaver-show-template-db@": "false",
+					"@dbeaver-show-unavailable-db@": "false",
+					"@dbeaver-read-all-data-types-db@": "false",
+					"postgresql.dd.plain.string": "false",
+					"postgresql.dd.tag.string": "false"
+				},
+				"auth-model": "native"
+			},
+			"custom-properties": {
+				"database.meta.separate.connection": "false"
+			}
+		},
+		"postgres-jdbc-18dc5c131d6-5602976bb18692ad": {
+			"provider": "postgresql",
+			"driver": "postgres-jdbc",
+			"name": "aupd_stage_ro",
+			"save-password": true,
+			"show-system-objects": true,
+			"read-only": false,
+			"folder": "_Архив/МЭШ.АУПД",
+			"configuration": {
+				"host": "10.15.166.16",
+				"port": "6432",
+				"database": "aupd_stage_ro",
+				"url": "jdbc:postgresql://10.15.166.16:6432/aupd_stage_ro",
+				"home": "postgresql_client",
+				"type": "prod",
+				"properties": {
+					"connectTimeout": "20",
+					"loginTimeout": "20"
+				},
+				"provider-properties": {
+					"@dbeaver-show-non-default-db@": "false",
+					"@dbeaver-show-template-db@": "false",
+					"@dbeaver-show-unavailable-db@": "false",
+					"@dbeaver-read-all-data-types-db@": "false",
+					"postgresql.dd.plain.string": "false",
+					"postgresql.dd.tag.string": "false"
+				},
+				"auth-model": "native"
+			},
+			"custom-properties": {
+				"database.meta.separate.connection": "false"
+			}
+		},
+		"postgres-jdbc-18dc5c2da30-223240f796371ab1": {
+			"provider": "postgresql",
+			"driver": "postgres-jdbc",
+			"name": "aupd_stage_ro_esia",
+			"save-password": true,
+			"show-system-objects": true,
+			"read-only": false,
+			"folder": "_Архив/МЭШ.АУПД",
+			"configuration": {
+				"host": "10.15.166.16",
+				"port": "6432",
+				"database": "aupd_stage_ro_esia",
+				"url": "jdbc:postgresql://10.15.166.16:6432/aupd_stage_ro_esia",
+				"home": "postgresql_client",
+				"type": "prod",
+				"properties": {
+					"connectTimeout": "20",
+					"loginTimeout": "20"
+				},
+				"provider-properties": {
+					"@dbeaver-show-non-default-db@": "false",
+					"@dbeaver-show-template-db@": "false",
+					"@dbeaver-show-unavailable-db@": "false",
+					"@dbeaver-read-all-data-types-db@": "false",
+					"postgresql.dd.plain.string": "false",
+					"postgresql.dd.tag.string": "false"
+				},
+				"auth-model": "native"
+			},
+			"custom-properties": {
+				"database.meta.separate.connection": "false"
+			}
+		},
+		"postgres-jdbc-18dc5c2dcba-52e64022eba98ef8": {
+			"provider": "postgresql",
+			"driver": "postgres-jdbc",
+			"name": "aupd_stage_ro_sudir",
+			"save-password": true,
+			"show-system-objects": true,
+			"read-only": false,
+			"folder": "_Архив/МЭШ.АУПД",
+			"configuration": {
+				"host": "10.15.166.16",
+				"port": "6432",
+				"database": "aupd_stage_ro_sudir",
+				"url": "jdbc:postgresql://10.15.166.16:6432/aupd_stage_ro_sudir",
+				"home": "postgresql_client",
+				"type": "prod",
+				"properties": {
+					"connectTimeout": "20",
+					"loginTimeout": "20"
+				},
+				"provider-properties": {
+					"@dbeaver-show-non-default-db@": "false",
+					"@dbeaver-show-template-db@": "false",
+					"@dbeaver-show-unavailable-db@": "false",
+					"@dbeaver-read-all-data-types-db@": "false",
+					"postgresql.dd.plain.string": "false",
+					"postgresql.dd.tag.string": "false"
+				},
+				"auth-model": "native"
+			},
+			"custom-properties": {
+				"database.meta.separate.connection": "false"
+			}
+		},
+		"postgres-jdbc-18dc5c2df36-666a39ece32292ae": {
+			"provider": "postgresql",
+			"driver": "postgres-jdbc",
+			"name": "aupd_stage_ro_kauth",
+			"save-password": true,
+			"show-system-objects": true,
+			"read-only": false,
+			"folder": "_Архив/МЭШ.АУПД",
+			"configuration": {
+				"host": "10.15.166.16",
+				"port": "6432",
+				"database": "aupd_stage_ro_kauth",
+				"url": "jdbc:postgresql://10.15.166.16:6432/aupd_stage_ro_kauth",
+				"home": "postgresql_client",
+				"type": "prod",
+				"properties": {
+					"connectTimeout": "20",
+					"loginTimeout": "20"
+				},
+				"provider-properties": {
+					"@dbeaver-show-non-default-db@": "false",
+					"@dbeaver-show-template-db@": "false",
+					"@dbeaver-show-unavailable-db@": "false",
+					"@dbeaver-read-all-data-types-db@": "false",
+					"postgresql.dd.plain.string": "false",
+					"postgresql.dd.tag.string": "false"
+				},
+				"auth-model": "native"
+			},
+			"custom-properties": {
+				"database.meta.separate.connection": "false"
+			}
+		},
+		"postgres-jdbc-18dc5c4e1c6-755304fe4e45247c": {
+			"provider": "postgresql",
+			"driver": "postgres-jdbc",
+			"name": "aupd_stage_ro_dim",
+			"save-password": true,
+			"show-system-objects": true,
+			"read-only": false,
+			"folder": "_Архив/МЭШ.АУПД",
+			"configuration": {
+				"host": "10.15.166.16",
+				"port": "6432",
+				"database": "aupd_stage_ro_dim",
+				"url": "jdbc:postgresql://10.15.166.16:6432/aupd_stage_ro_dim",
+				"home": "postgresql_client",
+				"type": "prod",
+				"properties": {
+					"connectTimeout": "20",
+					"loginTimeout": "20"
+				},
+				"provider-properties": {
+					"@dbeaver-show-non-default-db@": "false",
+					"@dbeaver-show-template-db@": "false",
+					"@dbeaver-show-unavailable-db@": "false",
+					"@dbeaver-read-all-data-types-db@": "false",
+					"postgresql.dd.plain.string": "false",
+					"postgresql.dd.tag.string": "false"
+				},
+				"auth-model": "native"
+			},
+			"custom-properties": {
+				"database.meta.separate.connection": "false"
+			}
+		},
+		"postgres-jdbc-194b207f64f-353af475d6a53a1": {
+			"provider": "postgresql",
+			"driver": "postgres-jdbc",
+			"name": "_vibor_stage_ro_material",
+			"save-password": true,
+			"show-system-objects": true,
+			"read-only": false,
+			"folder": "_Архив/МЭШ.ЭОМ",
+			"configuration": {
+				"host": "10.206.251.134",
+				"port": "6432",
+				"database": "vibor_stage_ro_material",
+				"url": "jdbc:postgresql://10.206.251.134:6432/vibor_stage_ro_material",
+				"home": "postgresql_client",
+				"type": "dev",
+				"provider-properties": {
+					"@dbeaver-show-non-default-db@": "false",
+					"@dbeaver-show-template-db@": "false",
+					"@dbeaver-show-unavailable-db@": "false",
+					"@dbeaver-read-all-data-types-db@": "false",
+					"postgresql.dd.plain.string": "false",
+					"postgresql.dd.tag.string": "false"
+				},
+				"auth-model": "native"
+			},
+			"custom-properties": {
+				"database.meta.separate.connection": "false"
+			}
+		},
+		"postgres-jdbc-19681fc27ce-6cb620854f9e8e2b": {
+			"provider": "postgresql",
+			"driver": "postgres-jdbc",
+			"name": "cnt_prod_ro 1",
+			"save-password": true,
+			"show-system-objects": true,
+			"read-only": false,
+			"folder": "МЭШ",
+			"configuration": {
+				"host": "10.206.251.134",
+				"port": "6432",
+				"database": "cnt_prod_ro",
+				"url": "jdbc:postgresql://10.206.251.134:6432/cnt_prod_ro",
+				"home": "postgresql_client",
+				"type": "prod",
+				"properties": {
+					"connectTimeout": "20",
+					"loginTimeout": "20"
+				},
+				"provider-properties": {
+					"@dbeaver-show-non-default-db@": "false",
+					"@dbeaver-show-template-db@": "false",
+					"@dbeaver-show-unavailable-db@": "false",
+					"@dbeaver-read-all-data-types-db@": "false",
+					"postgresql.dd.plain.string": "false",
+					"postgresql.dd.tag.string": "false"
+				},
+				"auth-model": "native"
+			}
+		},
+		"postgres-jdbc-19682022bc8-1604f7980ada0133": {
+			"provider": "postgresql",
+			"driver": "postgres-jdbc",
+			"name": "cnt_prod_ro 1 1",
+			"save-password": true,
+			"show-system-objects": true,
+			"read-only": false,
+			"folder": "МЭШ",
+			"configuration": {
+				"host": "10.206.251.134",
+				"port": "6432",
+				"database": "aupd_prod_ro",
+				"url": "jdbc:postgresql://10.206.251.134:6432/aupd_prod_ro",
+				"home": "postgresql_client",
+				"type": "prod",
+				"properties": {
+					"connectTimeout": "20",
+					"loginTimeout": "20"
+				},
+				"provider-properties": {
+					"@dbeaver-show-non-default-db@": "false",
+					"@dbeaver-show-template-db@": "false",
+					"@dbeaver-show-unavailable-db@": "false",
+					"@dbeaver-read-all-data-types-db@": "false",
+					"postgresql.dd.plain.string": "false",
+					"postgresql.dd.tag.string": "false"
+				},
+				"auth-model": "native",
+				"handlers": {}
+			},
+			"custom-properties": {
+				"database.meta.separate.connection": "false"
+			}
+		},
+		"postgres-jdbc-19682138fdf-956de09575ed9f": {
+			"provider": "postgresql",
+			"driver": "postgres-jdbc",
+			"name": "cnt_prod_ro 1 2",
+			"save-password": true,
+			"show-system-objects": true,
+			"read-only": false,
+			"folder": "МЭШ",
+			"configuration": {
+				"host": "10.206.251.134",
+				"port": "6432",
+				"database": "cnt_prod_ro",
+				"url": "jdbc:postgresql://10.206.251.134:6432/cnt_prod_ro",
+				"home": "postgresql_client",
+				"type": "prod",
+				"properties": {
+					"connectTimeout": "20",
+					"loginTimeout": "20"
+				},
+				"provider-properties": {
+					"@dbeaver-show-non-default-db@": "false",
+					"@dbeaver-show-template-db@": "false",
+					"@dbeaver-show-unavailable-db@": "false",
+					"@dbeaver-read-all-data-types-db@": "false",
+					"postgresql.dd.plain.string": "false",
+					"postgresql.dd.tag.string": "false"
+				},
+				"auth-model": "native"
+			}
+		},
+		"postgres-jdbc-196821392b7-f82873645c4e66a": {
+			"provider": "postgresql",
+			"driver": "postgres-jdbc",
+			"name": "cnt_prod_ro 1 3",
+			"save-password": true,
+			"show-system-objects": true,
+			"read-only": false,
+			"folder": "МЭШ",
+			"configuration": {
+				"host": "10.206.251.134",
+				"port": "6432",
+				"database": "cnt_prod_ro",
+				"url": "jdbc:postgresql://10.206.251.134:6432/cnt_prod_ro",
+				"home": "postgresql_client",
+				"type": "prod",
+				"properties": {
+					"connectTimeout": "20",
+					"loginTimeout": "20"
+				},
+				"provider-properties": {
+					"@dbeaver-show-non-default-db@": "false",
+					"@dbeaver-show-template-db@": "false",
+					"@dbeaver-show-unavailable-db@": "false",
+					"@dbeaver-read-all-data-types-db@": "false",
+					"postgresql.dd.plain.string": "false",
+					"postgresql.dd.tag.string": "false"
+				},
+				"auth-model": "native"
+			}
+		},
+		"postgres-jdbc-1968213950a-76adc72aee640cc1": {
+			"provider": "postgresql",
+			"driver": "postgres-jdbc",
+			"name": "cnt_prod_ro 1 4",
+			"save-password": true,
+			"show-system-objects": true,
+			"read-only": false,
+			"folder": "МЭШ",
+			"configuration": {
+				"host": "10.206.251.134",
+				"port": "6432",
+				"database": "cnt_prod_ro",
+				"url": "jdbc:postgresql://10.206.251.134:6432/cnt_prod_ro",
+				"home": "postgresql_client",
+				"type": "prod",
+				"properties": {
+					"connectTimeout": "20",
+					"loginTimeout": "20"
+				},
+				"provider-properties": {
+					"@dbeaver-show-non-default-db@": "false",
+					"@dbeaver-show-template-db@": "false",
+					"@dbeaver-show-unavailable-db@": "false",
+					"@dbeaver-read-all-data-types-db@": "false",
+					"postgresql.dd.plain.string": "false",
+					"postgresql.dd.tag.string": "false"
+				},
+				"auth-model": "native"
+			}
+		},
+		"postgres-jdbc-1968213996a-589ae140b79c71b": {
+			"provider": "postgresql",
+			"driver": "postgres-jdbc",
+			"name": "cnt_prod_ro 1 5",
+			"save-password": true,
+			"show-system-objects": true,
+			"read-only": false,
+			"folder": "МЭШ",
+			"configuration": {
+				"host": "10.206.251.134",
+				"port": "6432",
+				"database": "cnt_prod_ro",
+				"url": "jdbc:postgresql://10.206.251.134:6432/cnt_prod_ro",
+				"home": "postgresql_client",
+				"type": "prod",
+				"properties": {
+					"connectTimeout": "20",
+					"loginTimeout": "20"
+				},
+				"provider-properties": {
+					"@dbeaver-show-non-default-db@": "false",
+					"@dbeaver-show-template-db@": "false",
+					"@dbeaver-show-unavailable-db@": "false",
+					"@dbeaver-read-all-data-types-db@": "false",
+					"postgresql.dd.plain.string": "false",
+					"postgresql.dd.tag.string": "false"
+				},
+				"auth-model": "native"
+			}
+		}
+	},
+	"connection-types": {
+		"prod": {
+			"name": "Production",
+			"color": "org.jkiss.dbeaver.color.connectionType.prod.background",
+			"description": "Production база данных",
+			"auto-commit": false,
+			"confirm-execute": false,
+			"confirm-data-change": true
+		},
+		"dev": {
+			"name": "Разработка",
+			"color": "255,255,255",
+			"description": "База данных для разработки",
+			"auto-commit": true,
+			"confirm-execute": false,
+			"confirm-data-change": false
+		}
+	}
+}
